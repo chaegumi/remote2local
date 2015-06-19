@@ -81,7 +81,7 @@ if(!function_exists('remote2local')){
 								$filename2 = $base_url . 'resource/uploads/' . date('Y') . '/' . date('md') . '/' . $filename3 . '.bmp';
 								break;
 						}
-						mkdir_r(dirname($filename3));
+						mkdir_r(dirname($filename1));
 						file_put_contents($filename1, $response['content']);
 						$img->src = $filename2;						
 					}
