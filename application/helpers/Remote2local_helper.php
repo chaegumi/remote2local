@@ -30,7 +30,7 @@ if(!function_exists('remote2local')){
 		
 		$CI = &get_instance();
 		$base_url = base_url();
-		include APPPATH . 'helpers/simple_html_dom.php';
+		include_once APPPATH . 'helpers/simple_html_dom.php';
 		$dom = str_get_html($content);
 		foreach($dom->find('img') as $img){
 			// var_dump('222');
